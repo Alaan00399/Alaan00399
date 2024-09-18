@@ -1,0 +1,105 @@
+Calculadora 💥
+Para um exercício de HTML, CSS e Javascript, desenvolvi uma calculadora, usando o báciso, sem framework. Segue o código.
+
+
+
+Para visualizar o projeto online, clique aqui.
+
+Para acessar o código completo da aplicação, clique aqui.
+
+HTML
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TITLE -->
+    <title>Calculadora | DevBSB</title>
+
+    <!-- SEO TAGS -->
+    <meta name="description"
+        content="Uma simples calculadora com funções báricas: adição, subtração, multiplicação e divisão, desenvolvida em HMTL, CSS e Javascript." />
+    <meta name="keywords"
+        content="calculadora, devbsb, html, css, javascript, animation, adição, subtração, multiplicação, divisão, projeto" />
+    <meta name="robots" content="" />
+    <meta name="revisit-after" content="1 day" />
+    <meta name="language" content="Portuguese" />
+    <meta name="generator" content="N/A" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="/img/favicon.ico" />
+
+    <!-- FONT ROTOBO -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- STYLE CSS -->
+    <link href="/css/style.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- CALCULATOR -->
+    <div class="calculator">
+
+        <!-- DISPLAY -->
+        <div class="display">
+            <input id="display" placeholder="0" disabled>
+            <h2 id="history"></h2>
+        </div>
+
+        <!-- <BUTTONS -->
+        <div class="row">
+            <button class="button purple-text" onclick="limpar()">AC</button>
+            <div></div>
+            <div></div>
+            <button class="button gray" onclick="add_operador('/')">/</button>
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="add_numero(7)">7</button>
+            <button class="button" onclick="add_numero(8)">8</button>
+            <button class="button" onclick="add_numero(9)">9</button>
+            <button class="button gray" onclick="add_operador('*')">*</button>
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="add_numero(4)">4</button>
+            <button class="button" onclick="add_numero(5)">5</button>
+            <button class="button" onclick="add_numero(6)">6</button>
+            <button class="button gray" onclick="add_operador('-')">-</button>
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="add_numero(1)">1</button>
+            <button class="button" onclick="add_numero(2)">2</button>
+            <button class="button" onclick="add_numero(3)">3</button>
+            <button class="button gray" onclick="add_operador('+')">+</button>
+        </div>
+
+        <div class="row">
+            <div></div>
+            <button class="button" onclick="add_numero(0)">0</button>
+            <button class="button" onclick="add_numero('.')">.</button>
+            <button class="button purple" onclick="total()">=</button>
+        </div>
+        <!-- BUTTONS/> -->
+    </div>
+
+    <!-- LINK TO GITHUB PROJECT -->
+    <div class="github">
+        <a href="https://github.com/iaematt/calculator" target="_blank" title="Code in GitHub">
+            <img src="/img/github.svg" width="35" />
+        </a>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="/js/keyboard.min.js"></script>
+
+</body>
+
+</html>
